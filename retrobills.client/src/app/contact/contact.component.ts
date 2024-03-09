@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrl: './contact.component.css'
 })
-export class HomeComponent {
-
+export class ContactComponent {
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   /**
@@ -31,9 +30,5 @@ export class HomeComponent {
 
   OnContactClicked(){
     this.router.navigate(['home/contact'])
-  }
-
-  OnHomeClicked(){
-    this.router.navigate([''])
   }
 }
